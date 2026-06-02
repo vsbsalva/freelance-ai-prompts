@@ -19,6 +19,86 @@
       --green: #10b981;
     }
 
+    /* CRYPTO PAYMENT BOX */
+    .crypto-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-top: 1.5rem;
+      text-align: center;
+    }
+    .crypto-title {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 0.4rem;
+    }
+    .crypto-network {
+      display: inline-block;
+      background: rgba(59,130,246,0.15);
+      color: #60a5fa;
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 0.2rem 0.6rem;
+      border-radius: 4px;
+      letter-spacing: 0.06em;
+      margin-bottom: 1rem;
+    }
+    .crypto-address {
+      background: #000;
+      border: 1px solid #333;
+      border-radius: 8px;
+      padding: 0.8rem 1rem;
+      font-family: 'Courier New', monospace;
+      font-size: 0.78rem;
+      color: #d4d4d4;
+      word-break: break-all;
+      margin-bottom: 0.8rem;
+    }
+    .copy-btn {
+      display: inline-block;
+      background: #1d4ed8;
+      color: white;
+      border: none;
+      padding: 0.6rem 1.4rem;
+      border-radius: 7px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: opacity 0.2s;
+    }
+    .copy-btn:hover { opacity: 0.85; }
+    .copy-btn.copied { background: var(--green); }
+    .crypto-steps {
+      text-align: left;
+      margin-top: 1.2rem;
+      font-size: 0.83rem;
+      color: #aaa;
+      list-style: none;
+    }
+    .crypto-steps li {
+      padding: 0.3rem 0;
+      padding-left: 1.4rem;
+      position: relative;
+    }
+    .crypto-steps li::before {
+      content: attr(data-n);
+      position: absolute;
+      left: 0;
+      color: var(--accent-light);
+      font-weight: 700;
+    }
+    .delivery-note {
+      margin-top: 1rem;
+      background: rgba(16,185,129,0.07);
+      border: 1px solid rgba(16,185,129,0.2);
+      border-radius: 8px;
+      padding: 0.8rem;
+      font-size: 0.82rem;
+      color: #aaa;
+    }
+    .delivery-note strong { color: var(--green); }
+
     body {
       background: var(--bg);
       color: var(--text);
@@ -283,7 +363,7 @@
 
 <nav>
   <span class="logo">FreelanceAI Prompts</span>
-  <a href="#buy" class="nav-cta">Get Instant Access — $5</a>
+  <a href="#buy" class="nav-cta">Get Access — $5 ETH</a>
 </nav>
 
 <!-- HERO -->
@@ -295,10 +375,10 @@
     winning proposals, scope creep, and getting paid. Copy. Paste. Send.
   </p>
   <div class="cta-wrap">
-    <a href="YOUR_GUMROAD_LINK_HERE" class="cta-btn" id="buy">
-      Get All 30 Prompts — $5
+    <a href="#buy" class="cta-btn" id="buy-top">
+      Get All 30 Prompts — $5 in ETH
     </a>
-    <p class="price-note"><strong>Instant download.</strong> Works with ChatGPT & Claude (free tiers included).</p>
+    <p class="price-note"><strong>Pay with ETH on Base.</strong> Works with ChatGPT & Claude (free tiers included).</p>
   </div>
 </div>
 
@@ -446,6 +526,32 @@ Rules:
   </div>
 </section>
 
+<!-- PAYMENT SECTION -->
+<section id="buy">
+  <h2>Get the Pack — $5</h2>
+  <p style="color:#aaa;margin-bottom:0.5rem;">Pay with ETH on <strong style="color:#60a5fa;">Base network</strong>. Fees under $0.01.</p>
+
+  <div class="crypto-box">
+    <div class="crypto-title">Send ETH on Base</div>
+    <div class="crypto-network">BASE NETWORK ONLY</div>
+    <p style="font-size:0.8rem;color:var(--muted);margin-bottom:0.8rem;">Amount equivalent to <strong style="color:var(--text);">$5 USD</strong> in ETH</p>
+    <div class="crypto-address" id="eth-address">0x6F0f3b5fA8F8155E6FfEe7f2Bd8f68B437700087</div>
+    <button class="copy-btn" onclick="copyAddress()">Copy Address</button>
+
+    <ul class="crypto-steps">
+      <li data-n="1.">Open your wallet (MetaMask, Coinbase Wallet, Zerion…)</li>
+      <li data-n="2.">Select <strong style="color:#fff;">Base</strong> network</li>
+      <li data-n="3.">Send ETH worth $5 to the address above</li>
+      <li data-n="4.">Email your <strong style="color:#fff;">transaction hash</strong> to <strong style="color:var(--accent-light);">kamilballarteauqui@gmail.com</strong></li>
+      <li data-n="5.">Receive your download link within 24h ✓</li>
+    </ul>
+
+    <div class="delivery-note">
+      <strong>After payment:</strong> Email your tx hash to <strong>kamilballarteauqui@gmail.com</strong> with subject "Prompt Pack Purchase" and you'll receive the download link. 30-day money-back guarantee.
+    </div>
+  </div>
+</section>
+
 <!-- GUARANTEE -->
 <section>
   <div class="guarantee">
@@ -482,13 +588,24 @@ Rules:
 <div class="bottom-cta">
   <h2>Stop starting from scratch.<br>Start closing more clients.</h2>
   <p>30 copy-paste prompts for freelancers who want to spend less time writing emails and proposals, and more time doing work they love.</p>
-  <a href="YOUR_GUMROAD_LINK_HERE" class="cta-btn">Get All 30 Prompts — $5</a>
-  <p class="price-note" style="margin-top: 0.8rem;"><strong>Instant download.</strong> 30-day money-back guarantee.</p>
+  <a href="#buy" class="cta-btn">Get All 30 Prompts — $5 in ETH</a>
+  <p class="price-note" style="margin-top: 0.8rem;"><strong>Pay with ETH on Base.</strong> 30-day money-back guarantee.</p>
 </div>
 
 <footer>
   <p>FreelanceAI Prompts · Instant digital download · Questions? Reply to your purchase receipt.</p>
 </footer>
 
+<script>
+function copyAddress() {
+  const addr = document.getElementById('eth-address').innerText;
+  navigator.clipboard.writeText(addr).then(() => {
+    const btn = document.querySelector('.copy-btn');
+    btn.textContent = 'Copied!';
+    btn.classList.add('copied');
+    setTimeout(() => { btn.textContent = 'Copy Address'; btn.classList.remove('copied'); }, 2000);
+  });
+}
+</script>
 </body>
 </html>
