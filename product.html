@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>30 AI Prompts for Freelancers</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#0d0d0d;color:#e8e8e8;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;line-height:1.7;padding:0 1rem}
+.container{max-width:780px;margin:0 auto;padding:3rem 1rem 5rem}
+/* HEADER */
+.header{text-align:center;padding:3rem 0 2.5rem;border-bottom:1px solid #222}
+.header h1{font-size:clamp(1.6rem,4vw,2.4rem);font-weight:800;letter-spacing:-0.02em;margin-bottom:.5rem}
+.header h1 span{color:#a78bfa}
+.header p{color:#888;font-size:.95rem;margin-top:.4rem}
+.badge{display:inline-block;background:rgba(167,139,250,.1);border:1px solid rgba(167,139,250,.3);color:#a78bfa;font-size:.72rem;font-weight:700;padding:.3rem .8rem;border-radius:999px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:1.2rem}
+/* HOW TO USE */
+.how-box{background:#111;border:1px solid #222;border-radius:10px;padding:1.5rem;margin:2rem 0}
+.how-box h2{font-size:1rem;font-weight:700;color:#a78bfa;margin-bottom:.8rem;text-transform:uppercase;letter-spacing:.06em}
+.how-box ul{list-style:none}
+.how-box li{padding:.35rem 0;padding-left:1.4rem;position:relative;font-size:.9rem;color:#ccc}
+.how-box li::before{content:"→";position:absolute;left:0;color:#a78bfa}
+/* SECTION HEADER */
+.section-title{margin:3rem 0 1.5rem;padding-bottom:.6rem;border-bottom:2px solid #a78bfa}
+.section-title h2{font-size:1.1rem;font-weight:800;color:#a78bfa;text-transform:uppercase;letter-spacing:.06em}
+.section-title p{font-size:.82rem;color:#666;margin-top:.2rem}
+/* PROMPT CARD */
+.prompt-card{background:#111;border:1px solid #1e1e1e;border-radius:12px;padding:1.5rem;margin-bottom:1.2rem;transition:border-color .2s}
+.prompt-card:hover{border-color:#333}
+.prompt-number{font-size:.7rem;font-weight:700;color:#555;text-transform:uppercase;letter-spacing:.1em;margin-bottom:.4rem}
+.prompt-title{font-size:1.05rem;font-weight:700;margin-bottom:1rem;color:#f0f0f0}
+/* CODE BLOCK */
+.code-block{background:#000;border:1px solid #2a2a2a;border-radius:8px;padding:1rem 1.2rem;margin:.8rem 0;position:relative}
+.code-label{font-size:.65rem;font-weight:700;color:#555;text-transform:uppercase;letter-spacing:.1em;margin-bottom:.6rem}
+.code-block pre{font-family:'Courier New',Courier,monospace;font-size:.8rem;color:#c9d1d9;white-space:pre-wrap;line-height:1.7}
+.copy-btn{position:absolute;top:.6rem;right:.6rem;background:#1e1e1e;border:1px solid #333;color:#888;font-size:.68rem;padding:.25rem .6rem;border-radius:4px;cursor:pointer;font-family:inherit;transition:all .2s}
+.copy-btn:hover{background:#2a2a2a;color:#fff}
+.copy-btn.ok{background:#064e3b;color:#6ee7b7;border-color:#065f46}
+/* WHAT IT DOES */
+.what-box{background:rgba(167,139,250,.05);border-left:3px solid #7c3aed;padding:.7rem 1rem;margin:.8rem 0;border-radius:0 6px 6px 0}
+.what-box strong{color:#a78bfa;font-size:.75rem;text-transform:uppercase;letter-spacing:.06em;display:block;margin-bottom:.2rem}
+.what-box p{font-size:.88rem;color:#bbb}
+/* PRO TIP */
+.tip-box{background:rgba(16,185,129,.05);border-left:3px solid #10b981;padding:.7rem 1rem;margin:.8rem 0;border-radius:0 6px 6px 0}
+.tip-box strong{color:#10b981;font-size:.75rem;text-transform:uppercase;letter-spacing:.06em;display:block;margin-bottom:.2rem}
+.tip-box p{font-size:.88rem;color:#bbb}
+/* BONUS */
+.bonus{background:#111;border:1px solid #222;border-radius:12px;padding:1.5rem;margin:3rem 0}
+.bonus h3{font-size:1rem;font-weight:700;color:#fbbf24;margin-bottom:1rem}
+.bonus ol{padding-left:1.2rem;color:#ccc;font-size:.9rem}
+.bonus ol li{margin-bottom:.5rem}
+.bonus .stack{margin-top:1.2rem}
+.bonus .stack h4{font-size:.85rem;font-weight:700;color:#888;text-transform:uppercase;letter-spacing:.06em;margin-bottom:.6rem}
+.bonus .stack ul{list-style:none}
+.bonus .stack li{font-size:.85rem;color:#ccc;padding:.3rem 0;border-bottom:1px solid #1a1a1a;padding-left:1.2rem;position:relative}
+.bonus .stack li::before{content:"⚡";position:absolute;left:0;font-size:.7rem}
+/* FOOTER */
+.footer{text-align:center;padding:2rem 0;border-top:1px solid #1a1a1a;margin-top:3rem;color:#444;font-size:.8rem}
+/* TOC */
+.toc{background:#111;border:1px solid #1e1e1e;border-radius:10px;padding:1.2rem 1.5rem;margin:2rem 0}
+.toc h3{font-size:.8rem;text-transform:uppercase;letter-spacing:.08em;color:#555;margin-bottom:.8rem}
+.toc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:.3rem}
+.toc-item{font-size:.82rem;color:#888;padding:.2rem 0;cursor:pointer;transition:color .2s}
+.toc-item:hover{color:#a78bfa}
+.toc-item span{color:#555;margin-right:.4rem;font-size:.75rem}
+</style>
+</head>
+<body>
+<div class="container">
+
+<!-- HEADER -->
+<div class="header">
+  <div class="badge">30 Prompts · Copy. Paste. Get Paid.</div>
+  <h1>30 AI Prompts for Freelancers<br><span>Get Clients. Win Projects. Earn More.</span></h1>
+  <p>The Professional Freelancer AI Toolkit — Tested on ChatGPT-4o & Claude Sonnet</p>
+</div>
+
+<!-- HOW TO USE -->
+<div class="how-box">
+  <h2>How to use this pack</h2>
+  <ul>
+    <li><strong>THE PROMPT</strong> — Click "Copy" and paste into ChatGPT or Claude. Replace [BRACKETS] with your info.</li>
+    <li><strong>WHAT IT DOES</strong> — Why this prompt works and what it produces</li>
+    <li><strong>PRO TIP</strong> — How to get even better results from the output</li>
+    <li>Works with <strong>free ChatGPT</strong> and <strong>free Claude</strong> — no paid subscription needed</li>
+  </ul>
+</div>
+
+<!-- TOC -->
+<div class="toc">
+  <h3>Contents</h3>
+  <div class="toc-grid">
+    <div class="toc-item"><span>1–7</span> Cold Outreach</div>
+    <div class="toc-item"><span>8–14</span> Proposals & Client Comms</div>
+    <div class="toc-item"><span>15–20</span> Content & Personal Brand</div>
+    <div class="toc-item"><span>21–26</span> Pricing & Business</div>
+    <div class="toc-item"><span>27–30</span> Productivity & Ops</div>
+    <div class="toc-item"><span>★</span> Bonus: Stacking Guide</div>
+  </div>
+</div>
+
+<!-- SECTION 1 -->
+<div class="section-title">
+  <h2>Section 1 — Cold Outreach That Actually Gets Replies</h2>
+  <p>Prompts 1–7</p>
+</div>
+
+<div class="prompt-card">
+  <div class="prompt-number">Prompt 1</div>
+  <div class="prompt-title">The "I Did My Homework" Cold Email</div>
+  <div class="code-block">
+    <div class="code-label">Copy this prompt →</div>
+    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+    <pre>You are an expert cold email copywriter. Write a cold outreach email for a freelance [YOUR SKILL, e.g. web designer] reaching out to [TYPE OF COMPANY, e.g. local restaurants] who have [PROBLEM YOU NOTICED, e.g. outdated websites with no mobile version].
+
+Rules:
+- Subject line under 8 words, curiosity-driven
+- Opening line references something specific about THEIR business (I'll fill in the blank: [SPECIFIC DETAIL YOU NOTICED])
+- One clear pain point, one clear result you deliver
+- Call to action = a 15-minute call, not a sale
+- Tone: conversational, not corporate
+- Length: under 120 words</pre>
+  </div>
+  <div class="what-box"><strong>What it does</strong><p>Generic cold emails get deleted. This forces the AI to write something that feels researched and personal — the #1 thing that gets replies.</p></div>
+  <div class="tip-box"><strong>Pro Tip</strong><p>Before sending, visit their website/LinkedIn and fill in [SPECIFIC DETAIL YOU NOTICED] with something real: "I noticed your homepage still loads your 2019 menu PDF" hits harder than any template.</p></div>
+</div>
+
+<div class="prompt-card">
+  <div class="prompt-number">Prompt 2</div>
+  <div class="prompt-title">LinkedIn Connection Message (Gets Accepted + Replied)</div>
+  <div class="code-block">
+    <div class="code-label">Copy this prompt →</div>
+    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+    <pre>Write a LinkedIn connection request message from a freelance [YOUR SKILL] to [ROLE, e.g. marketing director at a SaaS company].
+
+Requirements:
+- Under 300 characters (LinkedIn limit)
+- Don't pitch a service immediately — build curiosity
+- Reference something from their recent post or company news: [WHAT THEY POSTED/DID]
+- End with an open question that invites a reply
+- No emojis, no "I came across your profile"</pre>
+  </div>
+  <div class="what-box"><strong>What it does</strong><p>90% of LinkedIn pitches get ignored because they sell too fast. This positions you as a peer, not a vendor.</p></div>
+  <div class="tip-box"><strong>Pro Tip</strong><p>Comment on their post FIRST, then send the connection request the next day. Response rate doubles.</p></div>
+</div>
+
+<div class="prompt-card">
+  <div class="prompt-number">Prompt 3</div>
+  <div class="prompt-title">Follow-Up Email (After No Reply)</div>
+  <div class="code-block">
+    <div class="code-label">Copy this prompt →</div>
+    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+    <pre>Write a short follow-up email for a freelancer who sent a cold email [X DAYS] ago and got no reply.
+
+Context: I emailed [COMPANY NAME] about [WHAT I OFFERED]. No response.
+
+Rules:
+- Don't apologize for following up
+- Add new value or a new angle (not just "checking in")
+- One sentence that creates mild urgency without being pushy
+- Under 60 words
+- End with a yes/no question to lower friction</pre>
+  </div>
+  <div class="what-box"><strong>What it does</strong><p>"Just checking in" follow-ups are ignored. This gives them a new reason to reply.</p></div>
+  <div class="tip-box"><strong>Pro Tip</strong><p>Send this exactly 4 business days after the first email. Too soon = annoying. Too late = forgotten.</p></div>
+</div>
+
+<div class="prompt-card">
+  <div class="prompt-number">Prompt 4</div>
+  <div class="prompt-title">Cold DM for Instagram/Twitter</div>
+  <div class="code-block">
+    <div class="code-label">Copy this prompt →</div>
+    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+    <pre>Write a cold DM for a freelance [YOUR SKILL] reaching out to [TYPE OF ACCOUNT, e.g. e-commerce brand with 10k-50k followers] on [PLATFORM].
+
+They have [SPECIFIC PROBLEM YOU SPOTTED, e.g. inconsistent posting schedule, low engagement on product photos].
+
+Rules:
+- First sentence cannot start with "I" or "Hi"
+- Mention the problem without being rude
+- Offer one specific, free insight or tip to build trust
+- CTA: invite them to reply, not to buy
+- Under 80 words</pre>
+  </div>
+  <div class="what-box"><strong>What it does</strong><p>DMs that lead with value get read. DMs that lead with pitches get blocked.</p></div>
+  <div class="tip-box"><strong>Pro Tip</strong><p>Screenshot the specific problem you're referencing and attach it to the DM. Instantly separates you from every other freelancer DMing them.</p></div>
+</div>
+
+<div class="prompt-card">
+  <div class="prompt-number">Prompt 5</div>
+  <div class="prompt-title">Referral Request Email (To Past Clients)</div>
+  <div class="code-block">
+    <div class="code-label">Copy this prompt →</div>
+    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+    <pre>Write a friendly email asking a past client for referrals.
+
+Context:
+- We worked together on: [PROJECT TYPE]
+- Result I delivered: [OUTCOME/RESULT]
+- Type of client I'm looking for: [IDEAL CLIENT DESCRIPTION]
+
+Rules:
+- Warm opener, remind them of the work you did together
+- Make the ask easy and specific (who exactly to refer, and how)
+- Offer something in return if appropriate: [REFERRAL INCENTIVE OR NONE]
+- Casual, not salesy
+- Under 150 words</pre>
+  </div>
+  <div class="what-box"><strong>What it does</strong><p>Referrals are the highest-converting leads. Most freelancers never ask. This removes the awkwardness.</p></div>
+  <div class="tip-box"><strong>Pro Tip</strong><p>Send this 2-3 weeks after you deliver a successful project, when the client is still excited about the results.</p></div>
+</div>
+
+<div class="prompt-card">
+  <div class="prompt-number">Prompt 6</div>
+  <div class="prompt-title">Re-engagement Email (Dormant Past Client)</div>
+  <div class="code-block">
+    <div class="code-label">Copy this prompt →</div>
+    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+    <pre>Write a re-engagement email to a past client I haven't worked with in [TIMEFRAME, e.g. 6 months].
+
+Client background:
+- Industry: [INDUSTRY]
+- Last project: [WHAT YOU DID]
+- Result: [WHAT HAPPENED]
+
+Current context: I want to offer them [NEW SERVICE OR UPDATE].
+
+Rules:
+- Reference the past work to rebuild connection
+- Lead with something NEW — a relevant trend, update, or insight about their industry
+- Soft pitch the new service as a natural next step
+- No desperate energy
+- Under 180 words</pre>
+  </div>
+  <div class="what-box"><strong>What it does</strong><p>Past clients are 5x easier to close than cold leads. This reactivates them without seeming desperate.</p></div>
+</div>
+
+<div class="prompt-card">
+  <div class="prompt-number">Prompt 7</div>
+  <div class="prompt-title">The Loom Video Script (For Video Cold Outreach)</div>
+  <div class="code-block">
+    <div class="code-label">Copy this prompt →</div>
+    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+    <pre>Write a 60-second Loom video script for cold outreach from a freelance [YOUR SKILL] to [TARGET COMPANY].
+
+Structure:
+1. Hook (5 sec): Name them + the specific problem you spotted
+2. Quick credibility (10 sec): One result you've delivered for someone similar
+3. Demo/insight (35 sec): Walk them through [SPECIFIC THING YOU'LL SHOW IN THE VIDEO]
+4. CTA (10 sec): One clear, low-commitment ask
+
+Tone: confident, conversational, like talking to a friend
+No reading from a script (write it to sound natural when spoken)</pre>
+  </div>
+  <div class="what-box"><strong>What it does</strong><p>Personalized Loom videos have a 3x higher reply rate than text emails. Most freelancers don't use them. You'll stand out immediately.</p></div>
+</div>
+
+<!-- SECTION 2 -->
+<div class="section-title">
+  <h2>Section 2 — Proposals That Win Projects</h2>
+  <p>Prompts 8–14</p>
+</div>
+
+<div class="prompt-card">
+  <div class="prompt-number">Prompt 8</div>
+  <div class="prompt-title">Winning Project Proposal</div>
+  <div class="code-block">
+    <div class="code-label">Copy this prompt →</div>
+    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+    <pre>Write a freelance project proposal for a [YOUR SKILL] project.
+
+Project brief from client: [PASTE CLIENT'S BRIEF HERE]
+My background for this project: [YOUR RELEVANT EXPERIENCE/SKILLS]
+My proposed approach: [YOUR METHODOLOGY IN 2-3 SENTENCES]
+My estimated timeline: [TIMELINE]
+My price: [PRICE OR RANGE]
+
+Structure the proposal as:
+1. One-paragraph "I understand your problem" opener
+2. My approach (3 bullet points)
+3. What you get (deliverables list)
+4. Timeline
+5. Investment
+6. Why me (2-3 sentences, no clichés)
+7. Clear next step
+
+Tone: confident, specific, consultative. No fluff.</pre>
+  </div>
+  <div class="what-box"><strong>What it does</strong><p>Most freelancers send a price and a skills list. A real proposal shows you understand the client's business — that's what wins work.</p></div>
+</div>
+
+<div class="prompt-card">
+  <div class="prompt-number">Prompt 9</div>
+  <div class="prompt-title">Price Justification Script</div>
+  <div class="code-block">
+    <div class="code-label">Copy this prompt →</div>
+    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+    <pre>A client is questioning my rate of [YOUR RATE] for [SERVICE]. They say it "seems high."
+
+Write a confident response that:
+1. Doesn't apologize for or lower the price
+2. Reframes cost as ROI (what they gain vs. what they spend)
+3. Compares to the cost of NOT solving the problem
+4. Offers ONE alternative (smaller scope, not lower rate)
+5. Stays warm, not defensive
+
+My relevant result I've delivered: [PAST RESULT]</pre>
+  </div>
+  <div class="what-box"><strong>What it does</strong><p>Price objections are almost always about perceived value, not money. This script reframes the conversation.</p></div>
+  <div class="tip-box"><strong>Pro Tip</strong><p>Never negotiate rate. Negotiate scope. "I can do X at that budget, which means we'd cut Y" protects your positioning.</p></div>
+</div>
+
+<div class="prompt-card">
+  <div class="prompt-number">Prompt 10</div>
+  <div class="prompt-title">Upwork/Fiverr Profile Bio</div>
+  <div class="code-block">
+    <div class="code-label">Copy this prompt →</div>
+    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+    <pre>Write a compelling freelancer profile bio for [PLATFORM] for a [YOUR SKILL] specialist.
+
+My target client: [WHO THEY ARE]
+My main offer: [WHAT YOU DO]
+My best result/case study: [SPECIFIC ACHIEVEMENT, e.g. increased client's conversion rate by 34%]
+My unique angle/background: [WHAT MAKES YOU DIFFERENT]
+
+Rules:
+- First line must hook immediately — no "Hi, I'm [name]"
+- Focus on client outcomes, not your skills list
+- Include one specific number or result
+- End with a clear call to what the client should do next
+- Under 200 words</pre>
+  </div>
+  <div class="what-box"><strong>What it does</strong><p>Platform algorithms favor profiles with high click-through rates. A result-focused opener gets more clicks and more inquiries.</p></div>
+</div>
+
+<div class="prompt-card">
+  <div class="prompt-number">Prompt 11</div>
+  <div class="prompt-title">Scope Creep Response</div>
+  <div class="code-block">
+    <div class="code-label">Copy this prompt →</div>
+    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+    <pre>A client is asking me to do [EXTRA WORK] that was not included in our original agreement for [ORIGINAL PROJECT].
+
+Write a professional, non-confrontational response that:
+1. Acknowledges the request positively
+2. Reminds them (gently) of the original scope
+3. Presents the extra work as an add-on with a price
+4. Makes it easy for them to say yes to the paid add-on
+5. Doesn't damage the relationship
+
+My rate for this extra work would be: [RATE]</pre>
+  </div>
+  <div class="what-box"><strong>What it does</strong><p>Scope creep kills freelancer margins. This script protects your time while keeping the relationship intact.</p></div>
+</div>
+
+<div class="prompt-card">
+  <div class="prompt-number">Prompt 12</div>
+  <div class="prompt-title">Testimonial Request Email</div>
+  <div class="code-block">
+    <div class="code-label">Copy this prompt →</div>
+    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+    <pre>Write an email asking a happy client for a testimonial.
+
+Context:
+- Project completed: [PROJECT TYPE]
+- Result delivered: [OUTCOME]
+- Client seemed pleased because: [WHAT THEY SAID OR SHOWED]
+
+Make the ask easy by providing:
+1. 3 optional questions they can answer (not a blank page)
+2. A note that a few sentences is enough
+3. Where the testimonial will be used: [WEBSITE / LINKEDIN / PORTFOLIO]
+
+Tone: grateful, relaxed, no pressure</pre>
+  </div>
+  <div class="what-box"><strong>What it does</strong><p>"Will you write me a testimonial?" gets vague responses. Giving them questions gets you specific, quotable proof.</p></div>
+  <div class="tip-box"><strong>Pro Tip</strong><p>Send this within 48 hours of the client's most excited reaction — when the result is fresh.</p></div>
+</div>
+
+<div class="prompt-card">
+  <div class="prompt-number">Prompt 13</div>
+  <div class="prompt-title">Project Kickoff Message</div>
+  <div class="code-block">
+    <div class="code-label">Copy this prompt →</div>
+    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+    <pre>Write a project kickoff message to send a new client after signing a contract.
+
+Project type: [PROJECT]
+Start date: [DATE]
+Key deliverables: [LIST]
+What I need from them: [INPUTS REQUIRED]
+First milestone: [MILESTONE + DEADLINE]
+
+Tone: professional but warm, builds confidence that they made the right choice
+Include:
+- A brief recap of what we're doing and why
+- What I need from them and by when
+- What they can expect from me
+- How to reach me with questions</pre>
+  </div>
+  <div class="what-box"><strong>What it does</strong><p>A confident kickoff message sets the tone for the entire project. Clients who feel informed pay faster.</p></div>
+</div>
+
+<div class="prompt-card">
+  <div class="prompt-number">Prompt 14</div>
+  <div class="prompt-title">Late Payment Follow-Up</div>
+  <div class="code-block">
+    <div class="code-label">Copy this prompt →</div>
+    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+    <pre>Write a payment follow-up message for an invoice that is [X DAYS] overdue.
+
+Invoice amount: [AMOUNT]
+Original due date: [DATE]
+Client relationship: [LONG-TERM / NEW / ONE-TIME]
+My tone preference: [FIRM BUT PROFESSIONAL / GENTLE REMINDER]
+
+Requirements:
+- Don't apologize for asking
+- Include the invoice number and amount clearly
+- If [DAYS] > 14, include a note about late fees or pausing work
+- Give them a specific deadline to respond
+- Keep it short — under 100 words</pre>
+  </div>
+  <div class="what-box"><strong>What it does</strong><p>Late payment follow-ups feel uncomfortable. This removes the emotional charge and gets the money moving.</p></div>
+</div>
+
+<!-- SECTION 3 -->
+<div class="section-title">
+  <h2>Section 3 — Content & Personal Brand</h2>
+  <p>Prompts 15–20</p>
+</div>
+
+<div class="prompt-card">
+  <div class="prompt-number">Prompt 15</div>
+  <div class="prompt-title">LinkedIn Post That Attracts Clients</div>
+  <div class="code-block">
+    <div class="code-label">Copy this prompt →</div>
+    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+    <pre>Write a LinkedIn post for a freelance [YOUR SKILL] that attracts inbound client leads.
+
+Topic: [A RESULT YOU GOT FOR A CLIENT, A LESSON YOU LEARNED, OR AN INDUSTRY INSIGHT]
+
+Structure:
+- First line: Bold hook that stops the scroll (no "I'm excited to share")
+- Lines 2-4: Story or insight with specific details
+- Lines 5-6: The lesson or takeaway for the reader
+- CTA: Invite comments or connections, subtly mention your service
+
+Format: Short paragraphs, no bullet points, conversational voice
+Length: 150-250 words</pre>
+  </div>
+  <div class="what-box"><strong>What it does</strong><p>LinkedIn algorithm favors posts with high early engagement. A strong hook is the only variable that matters.</p></div>
+</div>
+
+<div class="prompt-card">
+  <div class="prompt-number">Prompt 16</div>
+  <div class="prompt-title">Twitter/X Thread (Builds Audience + Attracts Leads)</div>
+  <div class="code-block">
+    <div class="code-label">Copy this prompt →</div>
+    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+    <pre>Write a Twitter/X thread for a freelance [YOUR SKILL] on the topic: [TOPIC]
+
+Thread structure:
+- Tweet 1: Bold claim or counterintuitive statement (the hook)
+- Tweets 2-7: Expand with specific points, each self-contained
+- Tweet 8: Tie it together with the main lesson
+- Tweet 9: CTA — follow me if you want more / DM me if you need help with [SERVICE]
+
+Each tweet: under 280 characters
+No buzzwords. Specific and direct.</pre>
+  </div>
+  <div class="what-box"><strong>What it does</strong><p>Threads position you as an expert. One good thread can generate dozens of leads over weeks from retweets.</p></div>
+</div>
+
+<div class="prompt-card">
+  <div class="prompt-number">Prompt 17</div>
+  <div class="prompt-title">Portfolio Case Study</div>
+  <div class="code-block">
+    <div class="code-label">Copy this prompt →</div>
+    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+    <pre>Write a portfolio case study for my freelance work.
+
+Project details:
+- Client type: [TYPE OF CLIENT]
+- Problem they had: [PROBLEM]
+- What I did: [YOUR WORK]
+- Result achieved: [SPECIFIC OUTCOME WITH NUMBERS IF POSSIBLE]
+- Timeline: [HOW LONG]
+
+Format:
+- Headline: The result, not the task
+- The Challenge: 2-3 sentences
+- My Approach: 3-4 bullet points
+- The Results: 1-2 sentences with numbers
+- What the client said: [QUOTE IF AVAILABLE]
+
+Tone: confident, specific, no jargon</pre>
+  </div>
+  <div class="what-box"><strong>What it does</strong><p>Case studies are the highest-converting portfolio content because they prove results, not just skills.</p></div>
+</div>
+
+<div class="prompt-card">
+  <div class="prompt-number">Prompt 18</div>
+  <div class="prompt-title">Freelancer Website About Page</div>
+  <div class="code-block">
+    <div class="code-label">Copy this prompt →</div>
+    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+    <pre>Write an About page for a freelance [YOUR SKILL] personal website.
+
+My background: [YOUR STORY IN 3 SENTENCES]
+Why I do this work: [YOUR MOTIVATION]
+Who I work with: [IDEAL CLIENT]
+My specialty: [SPECIFIC NICHE OR SKILL]
+My notable result: [BEST CLIENT OUTCOME]
+Something personal/interesting: [FUN FACT OR HUMANIZING DETAIL]
+
+Rules:
+- Talk about the client more than yourself
+- Include one specific result in the first paragraph
+- Show personality — not just credentials
+- End with a CTA to work together
+- Under 300 words</pre>
+  </div>
+</div>
+
+<div class="prompt-card">
+  <div class="prompt-number">Prompt 19</div>
+  <div class="prompt-title">Niche Down Script</div>
+  <div class="code-block">
+    <div class="code-label">Copy this prompt →</div>
+    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+    <pre>Help me define my freelance positioning statement.
+
+My skills: [LIST YOUR SKILLS]
+Industries I've worked in: [INDUSTRIES]
+Results I've delivered: [BEST OUTCOMES]
+Clients I enjoyed most: [DESCRIBE THEM]
+Clients I want to avoid: [DESCRIBE THEM]
+
+Analyze my inputs and suggest:
+1. My most profitable niche (skill + industry combination)
+2. My positioning statement ("I help [WHO] achieve [RESULT] without [PAIN]")
+3. Two content angles I should post about to attract that niche
+4. One service package I should lead with
+
+Explain your reasoning.</pre>
+  </div>
+  <div class="what-box"><strong>What it does</strong><p>Niching down is the fastest way to double your rates. This forces the AI to think strategically about your career.</p></div>
+</div>
+
+<div class="prompt-card">
+  <div class="prompt-number">Prompt 20</div>
+  <div class="prompt-title">"Why I'm Different" One-Liner</div>
+  <div class="code-block">
+    <div class="code-label">Copy this prompt →</div>
+    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+    <pre>Write 5 variations of a one-liner positioning statement for a freelance [YOUR SKILL].
+
+My specialty: [WHAT YOU DO]
+My target client: [WHO YOU SERVE]
+My main result: [WHAT THEY GET]
+My unique angle: [WHY YOU'RE DIFFERENT]
+
+For each variation:
+- Under 25 words
+- Lead with the result or client, not "I am a"
+- Specific enough to filter out wrong-fit clients
+- Use plain language
+
+Also tell me which one you'd recommend and why.</pre>
+  </div>
+</div>
+
+<!-- SECTION 4 -->
+<div class="section-title">
+  <h2>Section 4 — Pricing, Packages & Business</h2>
+  <p>Prompts 21–26</p>
+</div>
+
+<div class="prompt-card">
+  <div class="prompt-number">Prompt 21</div>
+  <div class="prompt-title">Design a Freelance Service Package</div>
+  <div class="code-block">
+    <div class="code-label">Copy this prompt →</div>
+    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+    <pre>Help me create a tiered service package for my freelance [SERVICE].
+
+My current hourly rate: [RATE]
+Average project duration: [HOURS/WEEKS]
+Common client requests: [LIST 3-4 COMMON ASKS]
+What clients value most: [SPEED / QUALITY / ONGOING SUPPORT / OTHER]
+
+Create 3 packages:
+- Starter (entry-level, low commitment)
+- Core (most popular, best value)
+- Premium (done-for-you, fast turnaround)
+
+For each: package name, what's included, price, who it's for, and one reason it's worth the price.
+
+Make the Core package so attractive that it's the obvious choice.</pre>
+  </div>
+  <div class="what-box"><strong>What it does</strong><p>Packages eliminate hourly rate negotiation. Clients choose between your packages instead of negotiating your rate.</p></div>
+</div>
+
+<div class="prompt-card">
+  <div class="prompt-number">Prompt 22</div>
+  <div class="prompt-title">Rate Increase Email (To Existing Clients)</div>
+  <div class="code-block">
+    <div class="code-label">Copy this prompt →</div>
+    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+    <pre>Write a professional email informing a long-term client of a rate increase.
+
+Current rate: [CURRENT RATE]
+New rate: [NEW RATE]
+Effective date: [DATE — give at least 30 days notice]
+Client history: We've worked together for [TIMEFRAME] on [TYPES OF PROJECTS]
+
+Rules:
+- Lead with appreciation, not apology
+- State the new rate clearly, no hedging
+- Give them a clear transition date
+- Offer to discuss if needed
+- Don't over-explain or justify excessively
+- Under 150 words</pre>
+  </div>
+  <div class="tip-box"><strong>Pro Tip</strong><p>Annual rate increases of 10-15% are expected by professional clients. Freelancers who never raise rates get trapped.</p></div>
+</div>
+
+<div class="prompt-card">
+  <div class="prompt-number">Prompt 23</div>
+  <div class="prompt-title">Project Estimate Calculator</div>
+  <div class="code-block">
+    <div class="code-label">Copy this prompt →</div>
+    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+    <pre>I'm estimating a freelance project. Help me price it correctly.
+
+Project description: [DESCRIBE THE PROJECT]
+Client type: [STARTUP / SMB / ENTERPRISE]
+My hourly rate: [RATE]
+My experience: [BEGINNER / INTERMEDIATE / EXPERT]
+
+Calculate:
+1. Estimated hours (break down by task)
+2. Recommended price (with a 20% buffer for unknowns)
+3. Risk factors that could increase scope
+4. What to clarify with the client before confirming the price
+5. Red flags in the brief (if any)
+
+Be specific. Don't round to nice numbers without justification.</pre>
+  </div>
+  <div class="what-box"><strong>What it does</strong><p>Underquoting is the #1 freelancer mistake. This forces you to think through every task before committing to a price.</p></div>
+</div>
+
+<div class="prompt-card">
+  <div class="prompt-number">Prompt 24</div>
+  <div class="prompt-title">Contract Clause Generator</div>
+  <div class="code-block">
+    <div class="code-label">Copy this prompt →</div>
+    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+    <pre>I'm a freelance [YOUR SKILL] and I need help writing a specific contract clause.
+
+Situation: [DESCRIBE THE PROBLEM YOU WANT TO PROTECT AGAINST, e.g. "clients requesting unlimited revisions" or "projects getting cancelled after I've started work"]
+
+Write a professional contract clause that:
+1. Clearly defines the boundary or policy
+2. Specifies consequences if violated
+3. Uses plain language (not legalese)
+4. Is fair to both parties
+5. Is under 100 words
+
+Note: This is for reference. Have a lawyer review for your jurisdiction.</pre>
+  </div>
+</div>
+
+<div class="prompt-card">
+  <div class="prompt-number">Prompt 25</div>
+  <div class="prompt-title">Income Goal Reverse-Engineer</div>
+  <div class="code-block">
+    <div class="code-label">Copy this prompt →</div>
+    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+    <pre>Help me reverse-engineer my income goal as a freelancer.
+
+My monthly income goal: $[AMOUNT]
+My current rate: $[RATE] per [HOUR/PROJECT/MONTH]
+How many hours I want to work per week: [HOURS]
+Current number of clients: [NUMBER]
+
+Calculate:
+1. How many clients/projects I need at my current rate
+2. How many hours I need to work
+3. If those numbers are realistic — and if not, what needs to change
+4. Three specific actions I should take THIS WEEK to move toward the goal
+5. What rate I'd need to charge to hit the goal with fewer clients
+
+Be direct. Tell me if my goal is unrealistic with current inputs.</pre>
+  </div>
+  <div class="what-box"><strong>What it does</strong><p>Most freelancers don't do the math. This forces clarity on what needs to change.</p></div>
+</div>
+
+<div class="prompt-card">
+  <div class="prompt-number">Prompt 26</div>
+  <div class="prompt-title">"Should I Take This Project?" Decision Framework</div>
+  <div class="code-block">
+    <div class="code-label">Copy this prompt →</div>
+    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+    <pre>Help me decide if I should take this freelance project.
+
+Project details: [DESCRIBE THE PROJECT]
+Client type: [WHO THEY ARE]
+Budget: [WHAT THEY'RE OFFERING]
+Timeline: [DEADLINE]
+Red flags (if any): [ANYTHING THAT FELT OFF]
+My current workload: [AVAILABLE / BUSY / OVERLOADED]
+My financial situation: [NEED THE MONEY / STABLE / COMFORTABLE]
+
+Evaluate on:
+1. Fair compensation (yes/no + why)
+2. Scope risk (is it likely to expand?)
+3. Client quality signals
+4. Strategic value (portfolio / referral potential)
+5. Opportunity cost
+
+Give me a clear recommendation: Take it / Negotiate first / Pass — and tell me why.</pre>
+  </div>
+</div>
+
+<!-- SECTION 5 -->
+<div class="section-title">
+  <h2>Section 5 — Productivity & Operations</h2>
+  <p>Prompts 27–30</p>
+</div>
+
+<div class="prompt-card">
+  <div class="prompt-number">Prompt 27</div>
+  <div class="prompt-title">Weekly Planning System</div>
+  <div class="code-block">
+    <div class="code-label">Copy this prompt →</div>
+    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+    <pre>Act as a productivity coach for a freelancer. Help me plan my work week.
+
+My current projects: [LIST ACTIVE PROJECTS]
+Deadlines this week: [LIST DEADLINES]
+Admin tasks: [INVOICING, EMAILS, PROPOSALS, ETC.]
+Business development goal: [E.G. SEND 5 COLD EMAILS, POST ON LINKEDIN TWICE]
+Available hours: [HOURS PER DAY × DAYS]
+My most productive time of day: [MORNING / AFTERNOON / EVENING]
+
+Create a day-by-day schedule that:
+- Protects deep work time for billable work
+- Batches admin and outreach into specific time blocks
+- Includes at least one business development activity per day
+- Is realistic, not aspirational</pre>
+  </div>
+</div>
+
+<div class="prompt-card">
+  <div class="prompt-number">Prompt 28</div>
+  <div class="prompt-title">Client Onboarding Questionnaire</div>
+  <div class="code-block">
+    <div class="code-label">Copy this prompt →</div>
+    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+    <pre>Create a client onboarding questionnaire for a freelance [YOUR SKILL].
+
+The questionnaire should:
+1. Help me understand their business goals (not just the project)
+2. Clarify their timeline and budget expectations upfront
+3. Identify decision-makers and approval processes
+4. Uncover any constraints or past failures with similar projects
+5. Get the assets/information I need to start work
+
+Include 10-15 questions.
+Mark which are "must answer" vs. "nice to have."
+Keep it professional but conversational, not like a government form.</pre>
+  </div>
+  <div class="what-box"><strong>What it does</strong><p>A good questionnaire eliminates 80% of project miscommunications before they happen.</p></div>
+</div>
+
+<div class="prompt-card">
+  <div class="prompt-number">Prompt 29</div>
+  <div class="prompt-title">End-of-Project Wrap-Up Email</div>
+  <div class="code-block">
+    <div class="code-label">Copy this prompt →</div>
+    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+    <pre>Write an end-of-project wrap-up email to send a client after delivering the final work.
+
+Project: [PROJECT TYPE]
+What was delivered: [DELIVERABLES]
+Key results or outcomes: [IF MEASURABLE]
+What they should do next: [NEXT STEPS FOR THEM]
+
+Include:
+- A brief recap of what was accomplished
+- Any important notes about using/maintaining the deliverables
+- An open door for future work (soft, not pushy)
+- A request for feedback (seeds the testimonial request)
+
+Tone: Professional, warm, confident. Make them feel good about hiring me.</pre>
+  </div>
+</div>
+
+<div class="prompt-card">
+  <div class="prompt-number">Prompt 30</div>
+  <div class="prompt-title">Annual Freelance Business Review</div>
+  <div class="code-block">
+    <div class="code-label">Copy this prompt →</div>
+    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+    <pre>Act as a business advisor helping me review my freelance year.
+
+Here's my data:
+- Total revenue: $[AMOUNT]
+- Number of clients: [NUMBER]
+- Best-paying project: [DESCRIBE]
+- Worst-paying project: [DESCRIBE]
+- Time I wasted most on: [WHAT]
+- Skills I improved: [LIST]
+- Goals I missed: [LIST]
+
+Analyze this and tell me:
+1. My most profitable client type and why I should focus there
+2. My least profitable work and whether to cut it
+3. One pricing change I should make immediately
+4. Three specific goals for next year with milestones
+5. The single most important thing I should change about how I work
+
+Be direct. Don't just validate my year — help me improve it.</pre>
+  </div>
+</div>
+
+<!-- BONUS -->
+<div class="bonus">
+  <h3>★ Bonus: Using These Prompts Effectively</h3>
+  <ol>
+    <li>Always fill in the [BRACKETS] — the more specific you are, the better the output</li>
+    <li>If the first output isn't right, say "Make it more [direct/friendly/concise/specific]" — one instruction at a time</li>
+    <li>Regenerate 2-3 times and pick the best version</li>
+    <li>Use ChatGPT-4o or Claude Sonnet for best results — free tiers work for most of these</li>
+  </ol>
+  <div class="stack">
+    <h4>Stacking Prompts (for bigger results)</h4>
+    <ul>
+      <li>Use Prompt 8 (Proposal) + Prompt 21 (Packages) together to win bigger projects</li>
+      <li>Use Prompt 1 (Cold Email) + Prompt 6 (Re-engagement) as a 2-touch sequence</li>
+      <li>Use Prompt 17 (Case Study) + Prompt 15 (LinkedIn Post) to turn one project into 30 days of content</li>
+    </ul>
+  </div>
+</div>
+
+<div class="footer">
+  <p>30 AI Prompts for Freelancers · If these prompts help you land one client, they've paid for themselves 100x over.</p>
+</div>
+
+</div>
+
+<script>
+function copyCode(btn) {
+  const pre = btn.closest('.code-block').querySelector('pre');
+  navigator.clipboard.writeText(pre.innerText).then(() => {
+    btn.textContent = '✓ Copied!';
+    btn.classList.add('ok');
+    setTimeout(() => { btn.textContent = 'Copy'; btn.classList.remove('ok'); }, 2000);
+  });
+}
+</script>
+</body>
+</html>
